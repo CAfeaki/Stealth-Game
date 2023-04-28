@@ -50,7 +50,7 @@ public class NavmeshAgentScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         PatrolPoint = 0;
         PatrolPointCount = wayPoints.Length;
-        patrolCheckRange = 0.5f;
+        patrolCheckRange = 15.0f;
 
         if (!jobIsPatrol && !jobIsStandGaurd)
         {

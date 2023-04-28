@@ -52,6 +52,7 @@ public class BasicInteract : MonoBehaviour
     public Transform carryPoint;
     private Transform carryItemPosition;
     private Rigidbody rbOfCarriedItem;
+    private Collider bcOfCarriedItem;
 
 
     void Start()
@@ -189,6 +190,8 @@ public class BasicInteract : MonoBehaviour
         carryItemPosition.position = carryPoint.position;
         carryItemPosition.parent = carryPoint;
         carriedItem.tag = ("Untagged");
+        bcOfCarriedItem = carriedItem.GetComponent<BoxCollider>();
+        bcOfCarriedItem.isTrigger = true;
         interactiveObject = null;
 
         //ResetPrompts();
@@ -202,6 +205,7 @@ public class BasicInteract : MonoBehaviour
         Debug.Log("Drop object called!");
         carriedItem.tag = ("Carryable");
         rbOfCarriedItem.useGravity = true;
+        bcOfCarriedItem.isTrigger = false;
         carryItemPosition.parent = null;
         carriedItem = null;
 

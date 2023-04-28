@@ -190,7 +190,7 @@ public class BasicInteract : MonoBehaviour
         carryItemPosition.position = carryPoint.position;
         carryItemPosition.parent = carryPoint;
         carriedItem.tag = ("Untagged");
-        bcOfCarriedItem = carriedItem.GetComponent<BoxCollider>();
+        bcOfCarriedItem = carriedItem.GetComponent<Collider>();
         bcOfCarriedItem.isTrigger = true;
         interactiveObject = null;
 

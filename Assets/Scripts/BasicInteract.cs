@@ -187,11 +187,16 @@ public class BasicInteract : MonoBehaviour
         rbOfCarriedItem = interactiveObject.GetComponent<Rigidbody>();
         rbOfCarriedItem.useGravity = false; 
         carriedItem = interactiveObject;
+        carryPoint.position = carryItemPosition.position; // what am i doing
         carryItemPosition.position = carryPoint.position;
         carryItemPosition.parent = carryPoint;
         carriedItem.tag = ("Untagged");
-        bcOfCarriedItem = carriedItem.GetComponent<Collider>();
-        bcOfCarriedItem.isTrigger = true;
+        Collider[] allColliders;
+        allColliders = carriedItem.GetComponents<Collider>();
+        foreach (Collider collider in allColliders)
+        {
+            collider.isTrigger = true;
+        }
         interactiveObject = null;
 
         //ResetPrompts();
@@ -205,7 +210,13 @@ public class BasicInteract : MonoBehaviour
         Debug.Log("Drop object called!");
         carriedItem.tag = ("Carryable");
         rbOfCarriedItem.useGravity = true;
-        bcOfCarriedItem.isTrigger = false;
+        Collider[] allColliders;
+        allColliders = carriedItem.GetComponents<Collider>();
+        foreach (Collider collider in allColliders)
+        {
+            collider.isTrigger = false;
+        }
+        interactiveObject = null;
         carryItemPosition.parent = null;
         carriedItem = null;
 

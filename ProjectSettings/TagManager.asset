@@ -12,6 +12,7 @@ TagManager:
   - Light
   - Ally
   - Carryable
+  - Collectable
   layers:
   - Default
   - TransparentFX

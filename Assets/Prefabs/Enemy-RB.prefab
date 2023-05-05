@@ -142,7 +142,7 @@ MonoBehaviour:
   wayPoints: []
   AIState: 3
   patrolSpeed: 14
-  chaseSpeed: 19
+  chaseSpeed: 18
   guardPosition: {x: 0, y: 0, z: 0}
   sightRange: 500
   lastSeenAt: {x: 0, y: 0, z: 0}
@@ -158,11 +158,11 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857893532508296046}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 100
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -309,8 +309,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4506143373811629760}
   m_LocalRotation: {x: -0.5716266, y: -0, z: -0, w: 0.8205139}
-  m_LocalPosition: {x: -0.006, y: -0.674, z: 2.553}
-  m_LocalScale: {x: 1.6300755, y: 2.6159987, z: 1.2055576}
+  m_LocalPosition: {x: -0.006, y: -0.348, z: 1.836}
+  m_LocalScale: {x: 1.6300755, y: 2, z: 1.2055576}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1857893532508296043}
@@ -395,9 +395,10 @@ MonoBehaviour:
   parent: {fileID: 1857893532508296046}
   guardPosition: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
+  guardHeightOffset: -7
   inLOS: 0
   direction: {x: 0, y: 0, z: 0}
   hitLayers:
     serializedVersion: 2
-    m_Bits: 2305
+    m_Bits: 73
   lightChecker: {fileID: 0}

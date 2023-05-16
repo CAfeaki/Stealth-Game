@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1857893532508296042}
   - component: {fileID: 1857893532508296045}
   - component: {fileID: 1857893532508296044}
-  - component: {fileID: 1857893532508296047}
   - component: {fileID: 1857893532508296040}
   - component: {fileID: 1857893532508296041}
+  - component: {fileID: 7013759064170957490}
   m_Layer: 10
   m_Name: Enemy-RB
   m_TagString: Enemy
@@ -103,28 +103,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!195 &1857893532508296047
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857893532508296046}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &1857893532508296040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +125,7 @@ MonoBehaviour:
   sightRange: 500
   lastSeenAt: {x: 0, y: 0, z: 0}
   delay: 3
-  patrolCheckRange: 15
+  patrolCheckRange: 20
   jobIsPatrol: 0
   jobIsStandGaurd: 0
 --- !u!54 &1857893532508296041
@@ -166,6 +144,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!195 &7013759064170957490
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857893532508296046}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 48.672924
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 165.67476
+  m_BaseOffset: 82.83738
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3201149136487089598
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,8 +194,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3201149136487089598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.279, z: 1.016}
-  m_LocalScale: {x: 1, y: 1.4384999, z: 1}
+  m_LocalPosition: {x: 0, y: -31.6, z: 64.7}
+  m_LocalScale: {x: 70.064995, y: 100.7885, z: 98.93177}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1857893532508296043}
@@ -308,14 +308,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4506143373811629760}
-  m_LocalRotation: {x: -0.5716266, y: -0, z: -0, w: 0.8205139}
-  m_LocalPosition: {x: -0.006, y: -22.8, z: 62.6}
-  m_LocalScale: {x: 56.399998, y: 69.19925, z: 41.71184}
-  m_ConstrainProportionsScale: 1
+  m_LocalRotation: {x: -0.46403703, y: -0, z: -0, w: 0.88581586}
+  m_LocalPosition: {x: -0.0061035156, y: -30.400002, z: 117.1}
+  m_LocalScale: {x: 120.423706, y: 148.57755, z: 67.99294}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1857893532508296043}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -69.727, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -55.296, y: 0, z: 0}
 --- !u!33 &5869476538582685312
 MeshFilter:
   m_ObjectHideFlags: 0

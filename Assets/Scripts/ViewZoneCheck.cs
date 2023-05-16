@@ -77,7 +77,7 @@ public class ViewZoneCheck : MonoBehaviour
         guardPosition = parent.transform.position;
         //guardPosition.y = myY;// + guardHeightOffset;
         guardPosition.y = parent.transform.position.y + guardHeightOffset;
-        //Debug.Log(guardPosition + " and " + parent.transform.position.y);
+        Debug.Log(guardPosition + " and " + parent.transform.position.y);
 
         direction = (target.transform.position - guardPosition).normalized; //direction FROM guard towards player    
         Ray g_ray = new Ray(guardPosition, direction);

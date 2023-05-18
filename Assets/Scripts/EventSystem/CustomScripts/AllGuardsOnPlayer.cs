@@ -35,6 +35,7 @@ public class AllGuardsOnPlayer : MonoBehaviour
         foreach (GameObject guard in guards)
         {
             guard.GetComponent<NavmeshAgentScript>().AIState = 1;
+            guard.GetComponentInChildren<ViewZoneCheck>().inLOS = true;
         }
         gloryRunTime = true;
         

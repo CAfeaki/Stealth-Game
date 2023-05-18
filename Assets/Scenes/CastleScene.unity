@@ -8596,6 +8596,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 849d6d1eeb28a4d4b897e3a739956a07, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee12eb957a5557c48ae2081e10856aff, type: 2}
     - target: {fileID: 919132149155446097, guid: 849d6d1eeb28a4d4b897e3a739956a07, type: 3}
       propertyPath: m_Name
       value: STM_Cabinet (2)
@@ -18028,6 +18032,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 849d6d1eeb28a4d4b897e3a739956a07, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee12eb957a5557c48ae2081e10856aff, type: 2}
     - target: {fileID: 919132149155446097, guid: 849d6d1eeb28a4d4b897e3a739956a07, type: 3}
       propertyPath: m_Name
       value: STM_Cabinet
@@ -22487,15 +22495,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4139642994171465462, guid: 037dcbc5e0a669745a4328c7ca244f48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 568.22
+      value: -113.16
       objectReference: {fileID: 0}
     - target: {fileID: 4139642994171465462, guid: 037dcbc5e0a669745a4328c7ca244f48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 140.2
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4139642994171465462, guid: 037dcbc5e0a669745a4328c7ca244f48, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 986.15
+      value: -131.2
       objectReference: {fileID: 0}
     - target: {fileID: 4139642994171465462, guid: 037dcbc5e0a669745a4328c7ca244f48, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41170,6 +41178,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 849d6d1eeb28a4d4b897e3a739956a07, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee12eb957a5557c48ae2081e10856aff, type: 2}
     - target: {fileID: 919132149155446097, guid: 849d6d1eeb28a4d4b897e3a739956a07, type: 3}
       propertyPath: m_Name
       value: STM_Cabinet (3)
